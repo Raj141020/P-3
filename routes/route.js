@@ -26,7 +26,7 @@ router.post('/books', auth.authentication, auth.authorisation, bookController.cr
 
 /*.........................//4// GET BOOKS FROM QUERY //....................................*/
 
-router.get('/books', auth.authentication, bookController.getBookFrmQuery);
+router.get('/books', bookController.getBookFrmQuery);
 
 /*.........................//5// GET BOOK FROM PARAM //.....................................*/
 
